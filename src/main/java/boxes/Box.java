@@ -1,11 +1,17 @@
-import java.lang.reflect.Type;
-import java.util.ArrayList;
+package boxes;
+
+import sweets.AbstractSweets;
+
 
 public interface Box {
-    ArrayList<Sweets> list = new ArrayList<>();
-    void add(Sweets sweets);
+
+    void add(AbstractSweets sweets);
+
     void deleteByIndex(int index);
+
     void deleteLast();
+
     void printInfoAboutBox();
+
     void printInfoAboutEntities();
 }
